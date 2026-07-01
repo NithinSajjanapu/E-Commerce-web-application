@@ -6,7 +6,7 @@ async function loadCart(){
 
     try{
 
-        const response = await fetch("http://localhost:5000/api/cart",{
+        const response = await fetch("https://e-commerce-web-application-92ho.onrender.com/api/cart",{
             headers:{
                 Authorization:`Bearer ${token}`
             }
@@ -58,7 +58,7 @@ async function addToCart(productId){
 
     try{
 
-        const response = await fetch("http://localhost:5000/api/cart",{
+        const response = await fetch("https://e-commerce-web-application-92ho.onrender.com/api/cart",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
@@ -84,7 +84,7 @@ async function removeFromCart(productId){
 
     const token = localStorage.getItem("token");
 
-    await fetch(`http://localhost:5000/api/cart/${productId}`,{
+    await fetch(`https://e-commerce-web-application-92ho.onrender.com/api/cart/${productId}`,{
         method:"DELETE",
         headers:{
             Authorization:`Bearer ${token}`

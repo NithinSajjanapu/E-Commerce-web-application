@@ -12,7 +12,7 @@ checkoutForm.addEventListener("submit", async (e) => {
 
         /* GET CART FIRST */
         const cartResponse = await fetch(
-            "http://localhost:5000/api/cart",
+            "https://e-commerce-web-application-92ho.onrender.com/api/cart",
             {
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -41,7 +41,7 @@ checkoutForm.addEventListener("submit", async (e) => {
 
         /* PLACE ORDER */
         const response = await fetch(
-            "http://localhost:5000/api/orders",
+            "https://e-commerce-web-application-92ho.onrender.com/api/orders",
             {
                 method: "POST",
 

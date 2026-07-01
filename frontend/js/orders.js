@@ -7,7 +7,7 @@ async function loadOrders() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/orders/my-orders",
+            "https://e-commerce-web-application-92ho.onrender.com/api/orders/my-orders",
             {
                 headers: {
                     Authorization: `Bearer ${token}`

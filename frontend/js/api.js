@@ -1,6 +1,6 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://e-commerce-web-application-92ho.onrender.com";
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://e-commerce-web-application-92ho.onrender.com";
 
 function getToken() {
     return localStorage.getItem("token");
